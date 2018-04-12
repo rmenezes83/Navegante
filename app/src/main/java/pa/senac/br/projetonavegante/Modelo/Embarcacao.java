@@ -1,60 +1,60 @@
 package pa.senac.br.projetonavegante.Modelo;
 
 public class Embarcacao {
-    private String destinoEmbarcacao;
-    private String empresaEmbarcacao;
-    private String idPortoEmbarcacao;
-    private String nomeEmbarcacao;
-    private String tipoEmbarcacao;
+    private String DestinoEmbarcacao;
+    private String EmpresaEmbarcacao;
+    private String IdPortoEmbarcacao;
+    private String NomeEmbarcacao;
+    private String TipoEmbarcacao;
 
     public String getDestinoEmbarcacao() {
-        return destinoEmbarcacao;
+        return DestinoEmbarcacao;
     }
 
     public void setDestinoEmbarcacao(String destinoEmbarcacao) {
-        this.destinoEmbarcacao = destinoEmbarcacao;
+        DestinoEmbarcacao = destinoEmbarcacao;
     }
 
     public String getEmpresaEmbarcacao() {
-        return empresaEmbarcacao;
+        return EmpresaEmbarcacao;
     }
 
     public void setEmpresaEmbarcacao(String empresaEmbarcacao) {
-        this.empresaEmbarcacao = empresaEmbarcacao;
+        EmpresaEmbarcacao = empresaEmbarcacao;
     }
 
     public String getIdPortoEmbarcacao() {
-        return idPortoEmbarcacao;
+        return IdPortoEmbarcacao;
     }
 
     public void setIdPortoEmbarcacao(String idPortoEmbarcacao) {
-        this.idPortoEmbarcacao = idPortoEmbarcacao;
+        IdPortoEmbarcacao = idPortoEmbarcacao;
     }
 
     public String getNomeEmbarcacao() {
-        return nomeEmbarcacao;
+        return NomeEmbarcacao;
     }
 
     public void setNomeEmbarcacao(String nomeEmbarcacao) {
-        this.nomeEmbarcacao = nomeEmbarcacao;
+        NomeEmbarcacao = nomeEmbarcacao;
     }
 
     public String getTipoEmbarcacao() {
-        return tipoEmbarcacao;
+        return TipoEmbarcacao;
     }
 
     public void setTipoEmbarcacao(String tipoEmbarcacao) {
-        this.tipoEmbarcacao = tipoEmbarcacao;
+        TipoEmbarcacao = tipoEmbarcacao;
     }
 
     @Override
     public String toString() {
         return "Embarcacao{" +
-                "destinoEmbarcacao='" + destinoEmbarcacao + '\'' +
-                ", empresaEmbarcacao='" + empresaEmbarcacao + '\'' +
-                ", idPortoEmbarcacao='" + idPortoEmbarcacao + '\'' +
-                ", nomeEmbarcacao='" + nomeEmbarcacao + '\'' +
-                ", tipoEmbarcacao='" + tipoEmbarcacao + '\'' +
+                "DestinoEmbarcacao='" + DestinoEmbarcacao + '\'' +
+                ", EmpresaEmbarcacao='" + EmpresaEmbarcacao + '\'' +
+                ", IdPortoEmbarcacao='" + IdPortoEmbarcacao + '\'' +
+                ", NomeEmbarcacao='" + NomeEmbarcacao + '\'' +
+                ", TipoEmbarcacao='" + TipoEmbarcacao + '\'' +
                 '}';
     }
 }

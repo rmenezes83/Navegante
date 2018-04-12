@@ -32,16 +32,20 @@ public class EmbarcActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_embarc);
+
+        ListaEmbarc = findViewById(R.id.ListaEmbarc);
+        iniciarFireBase();
         getLista();
+
+    }
+
+    public void iniciarFireBase() {
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("Embarcacao");
     }
 
     public Embarcacao geraLista() {
         lista = new Embarcacao();
-        lista.setDestinoEmbarcacao("");
-        lista.setEmpresaEmbarcacao("");
-        lista.setIdPortoEmbarcacao("");
-        lista.setNomeEmbarcacao("");
-        lista.setTipoEmbarcacao("");
         return lista;
     }
 
