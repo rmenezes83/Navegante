@@ -49,13 +49,7 @@ public class Embarcacao {
 
     @Override
     public String toString() {
-        return "Embarcacao{" +
-                "DestinoEmbarcacao='" + DestinoEmbarcacao + '\'' +
-                ", EmpresaEmbarcacao='" + EmpresaEmbarcacao + '\'' +
-                ", IdPortoEmbarcacao='" + IdPortoEmbarcacao + '\'' +
-                ", NomeEmbarcacao='" + NomeEmbarcacao + '\'' +
-                ", TipoEmbarcacao='" + TipoEmbarcacao + '\'' +
-                '}';
+        return  "Nome da Embarcacao: " + NomeEmbarcacao;
     }
 }
 

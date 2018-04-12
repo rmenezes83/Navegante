@@ -1,5 +1,6 @@
 package pa.senac.br.projetonavegante;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void buscarDestino(View view) {
         //lista = EmbarcActivity.geraLista();
-        myRef.child(lista.getNomeEmbarcacao()).setValue(lista);
-        destino.setText(null);
+        //myRef.child(lista.getNomeEmbarcacao()).setValue(lista);
+        //destino.setText(null);
+
+        Intent intent = new Intent(this, EmbarcActivity.class);
+        startActivity(intent);
     }
 }

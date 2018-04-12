@@ -1,16 +1,16 @@
 package pa.senac.br.projetonavegante.Modelo;
 
 public class Porto {
-    private String nomePorto;
+    private String NomePorto;
     private String EnderecoPorto;
     private String FonePorto;
 
     public String getNomePorto() {
-        return nomePorto;
+        return NomePorto;
     }
 
     public void setNomePorto(String nomePorto) {
-        this.nomePorto = nomePorto;
+        NomePorto = nomePorto;
     }
 
     public String getEnderecoPorto() {
@@ -32,7 +32,7 @@ public class Porto {
     @Override
     public String toString() {
         return "Porto{" +
-                "nomePorto='" + nomePorto + '\'' +
+                "NomePorto='" + NomePorto + '\'' +
                 ", EnderecoPorto='" + EnderecoPorto + '\'' +
                 ", FonePorto='" + FonePorto + '\'' +
                 '}';
