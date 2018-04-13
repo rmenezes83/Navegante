@@ -46,11 +46,6 @@ public class Embarcacao {
     public void setTipoEmbarcacao(String tipoEmbarcacao) {
         TipoEmbarcacao = tipoEmbarcacao;
     }
-
-    @Override
-    public String toString() {
-        return  "Nome da Embarcacao: " + NomeEmbarcacao;
-    }
 }
 
 

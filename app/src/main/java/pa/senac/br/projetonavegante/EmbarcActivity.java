@@ -33,7 +33,7 @@ public class EmbarcActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_embarc);
 
-        ListaEmbarc = (ListView) findViewById(R.id.lista_embarc);
+        ListaEmbarc = findViewById(R.id.lista_embarc);
 
         iniciarFireBase();
         getLista();

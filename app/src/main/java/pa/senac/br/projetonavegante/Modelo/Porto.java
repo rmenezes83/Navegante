@@ -28,13 +28,4 @@ public class Porto {
     public void setFonePorto(String fonePorto) {
         FonePorto = fonePorto;
     }
-
-    @Override
-    public String toString() {
-        return "Porto{" +
-                "NomePorto='" + NomePorto + '\'' +
-                ", EnderecoPorto='" + EnderecoPorto + '\'' +
-                ", FonePorto='" + FonePorto + '\'' +
-                '}';
-    }
 }

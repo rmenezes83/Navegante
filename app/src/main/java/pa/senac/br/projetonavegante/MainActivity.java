@@ -40,10 +40,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buscarDestino(View view) {
-        //lista = EmbarcActivity.geraLista();
-        //myRef.child(lista.getNomeEmbarcacao()).setValue(lista);
-        //destino.setText(null);
-
         Intent intent = new Intent(this, EmbarcActivity.class);
         startActivity(intent);
     }
