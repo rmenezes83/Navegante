@@ -15,6 +15,7 @@ import com.google.firebase.database.ValueEventListener;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import pa.senac.br.projetonavegante.BaseAdapter.AdapterEmbarc;
 import pa.senac.br.projetonavegante.Modelo.Embarcacao;
 
 public class EmbarcActivity extends AppCompatActivity {
@@ -32,7 +33,8 @@ public class EmbarcActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_embarc);
 
-        ListaEmbarc = findViewById(R.id.ListaEmbarc);
+        ListaEmbarc = (ListView) findViewById(R.id.lista_embarc);
+
         iniciarFireBase();
         getLista();
 
@@ -68,11 +70,16 @@ public class EmbarcActivity extends AppCompatActivity {
     }
 
     private void carregaLista() {
-        ArrayAdapter adapter =
-                new ArrayAdapter(EmbarcActivity.this,
-                        android.R.layout.simple_list_item_1,
-                        android.R.id.text1,
-                        minhaLista);
+        AdapterEmbarc adapter = new AdapterEmbarc(minhaLista, this);
         ListaEmbarc.setAdapter(adapter);
+
+//        ArrayAdapter adapter =
+//                new ArrayAdapter(EmbarcActivity.this,
+//                        android.R.layout.simple_list_item_1,
+//                        android.R.id.text1,
+//                        minhaLista);
+//        ListaEmbarc.setAdapter(adapter);
     }
+
+
 }
