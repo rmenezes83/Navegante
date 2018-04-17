@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/lista_embarc_personalizada_imagem"
-        android:layout_width="107dp"
+        android:layout_width="116dp"
         android:layout_height="match_parent" />
 
     <LinearLayout

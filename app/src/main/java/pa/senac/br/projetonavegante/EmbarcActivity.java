@@ -1,7 +1,6 @@
 package pa.senac.br.projetonavegante;
 
 import android.util.Log;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +31,6 @@ public class EmbarcActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_embarc);
-
         ListaEmbarc = findViewById(R.id.lista_embarc);
 
         iniciarFireBase();
@@ -72,13 +70,6 @@ public class EmbarcActivity extends AppCompatActivity {
     private void carregaLista() {
         AdapterEmbarc adapter = new AdapterEmbarc(minhaLista, this);
         ListaEmbarc.setAdapter(adapter);
-
-//        ArrayAdapter adapter =
-//                new ArrayAdapter(EmbarcActivity.this,
-//                        android.R.layout.simple_list_item_1,
-//                        android.R.id.text1,
-//                        minhaLista);
-//        ListaEmbarc.setAdapter(adapter);
     }
 
 

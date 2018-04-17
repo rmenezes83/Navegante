@@ -4,12 +4,14 @@ import pa.senac.br.projetonavegante.Modelo.Embarcacao;
 import pa.senac.br.projetonavegante.R;
 
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import java.util.List;
 
 public class AdapterEmbarc extends BaseAdapter {
@@ -38,9 +40,9 @@ public class AdapterEmbarc extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View recycled, ViewGroup container) {
         View view = act.getLayoutInflater()
-                .inflate(R.layout.item_embarcacao, parent, false);
+                .inflate(R.layout.item_embarcacao, container, false);
         Embarcacao embarcacao = minhaLista.get(position);
 
         TextView nome = (TextView)
@@ -58,7 +60,7 @@ public class AdapterEmbarc extends BaseAdapter {
         destino.setText(embarcacao.getDestinoEmbarcacao());
         empresa.setText(embarcacao.getEmpresaEmbarcacao());
         tipo.setText(embarcacao.getTipoEmbarcacao());
-        imagem.setImageResource(R.drawable.barcarena);
+        Glide.with(act).load(embarcacao.getImagem()).into(imagem);
         return view;
     }
 }

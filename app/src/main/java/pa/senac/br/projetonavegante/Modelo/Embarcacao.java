@@ -6,6 +6,15 @@ public class Embarcacao {
     private String IdPortoEmbarcacao;
     private String NomeEmbarcacao;
     private String TipoEmbarcacao;
+    private String imagem;
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
+    }
 
     public String getDestinoEmbarcacao() {
         return DestinoEmbarcacao;

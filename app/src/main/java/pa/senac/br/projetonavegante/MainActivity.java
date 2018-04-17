@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import java.util.List;
 
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buscarDestino(View view) {
+
+        //Query firebaseSearchQuery = myRef.orderByChild("DestinoEmbarcacao").startAt(searchText).endAt(searchText + "\uf8ff");
+
         Intent intent = new Intent(this, EmbarcActivity.class);
         startActivity(intent);
     }
